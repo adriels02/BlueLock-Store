@@ -192,6 +192,13 @@ nav ul li :hover {
     margin-right: 1rem;
   }
 }
+main h1{
+  text-align: left;
+  margin-left: 150px;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  font-family: "blue", sans-serif;
+}
 
 .container {
   display: flex;
@@ -274,7 +281,9 @@ nav ul li :hover {
   border-radius: 5px;
   cursor: pointer;
 }
-
+main span{
+  text-align: center;
+}
 @media (max-width: 680px) {
   .items{
     display: block;
