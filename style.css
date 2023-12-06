@@ -36,9 +36,10 @@ header > div {
 .logo {
   font-family: "blue", sans-serif;
 }
-.logo {
+.logo a{
   cursor: pointer;
   color: #00008b;
+  text-decoration: none;
 }
 
 .logo span {
@@ -78,6 +79,11 @@ nav ul li :hover {
   display: none;
 }
 
+nav a{
+  color: #fff;
+  text-decoration: none;
+}
+
 .slider {
   margin: 20px auto;
   width: 800px;
@@ -105,7 +111,8 @@ nav ul li :hover {
 
 @media (max-width: 800px){
   .slider{
-    width: 200px;
+    width: 400px;
+    height: 200px;
   }
 
   .manual-btn{
@@ -117,7 +124,7 @@ nav ul li :hover {
   }
 
   .slide img{
-    width: 200px;
+    width: 400px;
   }
 
 }
@@ -137,7 +144,7 @@ nav ul li :hover {
 }
 
 .manual-btn:not(:last-child) {
-  margin-right: 40px;
+  margin-right: 36px;
 }
 
 .manual-btn:hover {
@@ -237,6 +244,7 @@ main h1{
     background-color: #2c2c2c;
     padding: 20px;
     border-radius: 10px;
+    margin-bottom: 15px;
     box-shadow: 6px 6px 22px 2px #000000;
 }
 
@@ -256,7 +264,7 @@ main h1{
 
 .product{
     text-align: center;
-    background-color: yellow;
+    background-color: rgb(255, 255, 255);
     height: 220px;
     width: 100%;
     border-radius: 5px;
@@ -281,19 +289,19 @@ main h1{
 
 .item h3{
   margin: 0;
-  color: #444;
+  color: #000000;
   font-size: 1.2rem;
   margin: 10px 0px 10px 0px;
 }
 
 .item span{
-  color: #777;
+  color: #000000;
   font-size: 1rem;
   margin-bottom: 10px;
 }
 
 .item button{
-  background-color: #262524;
+  background-color: #00008b;
   color: white;
   border: none;
   padding: 10px;
@@ -388,4 +396,36 @@ footer{
 
   .links-footer{
     margin-left: 30%;
+  }
+
+  .contact-list a{
+    color: #00008b;
+    
+  }
+
+  .formularios{
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+    padding: 30px;
+    display: flex;
+
+  }
+   input, select, textarea{
+    margin-bottom: 20px;
+    margin-left: 10px;
+    margin-right: 50px;
+    margin-top: 10px;
+  }
+label{
+  margin-left: 5px;
+}
+
+  form{
+    margin: 0 100px;
+    
+  }
+
+  fieldset{
+    border-radius: 10px;
   }
