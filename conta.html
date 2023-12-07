@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="style.css">
     <title>Contas | Blue Lock</title>
 </head>
-<body class="pagina dois">
+<body>
     <header class="navbar">
         <div class="header-content">
             <h1 class="logo"><a href="conta.html">Blue<span>Lock</span></a></h1>
@@ -26,30 +26,84 @@
         </div>
     </header>
 
-    <main>
+    <main class="main-dois">
+        <video class="video-background" autoplay muted loop>
+            <source src="image/lionel-messi-blue-lock- wall paper 2.mp4" type="video/mp4">
+             navegador não suporta o elemento de vídeo.
+          </video>
         <div class="formularios">
             <div class="logar">
                 <form action="/login" method="post">
-                    <fieldset>
-                        <h1>Entrar</h1>
-                        <hr>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email"> <br>
-                        <label for="password">Senha:</label>
-                        <input type="password" name="senha" id="password"><br>
-                        <button>Entrar</button>
-                        <p><a href="">Esqueceu sua senha? &#8594</a></p>
-                    </fieldset>
+                                               
+                    <h1>Entrar</h1>
+                    
+                    <div class="input-box">
+                                <label for="entrar_email">Email:</label>
+                                <input type="email" name="email" id="entrar_email" required> <br>
+                            </div> 
+                            <div class="input-box">
+                                <label for="password">Senha:</label>
+                                <input type="password" name="senha" id="password" required><br>
+                            </div>                
+                            <div class="esqueceu-senha">
+                                <a href="">Esqueceu sua senha? &#8594</a>
+                            </div>
+                            <input class="button" type="submit" value="Entrar">
+                    
                 </form>
             </div>
             <div class="registrar">
                 <form action="/register" method="post">
-                    <fieldset>
-                        <h1>Criar conta</h1>
-                        <hr>
+                    
+                        
+                            <h1>Criar conta</h1>
+                            
+                       <div class="input-box">
+                           <label for="Nome completo">Nome completo:</label>
+                           <input type="text" name="nome completo" id="Nome completo" required><br>
+                        </div>
+                        <div class="input-box">
+                            <label for="email">Email:</label>
+                            <input type="email" name="email" id="email" required><br>
+                        </div>
+                        <div class="input-box">
+                            <label for="numeroTelefone">Telefone (Opcional):</label>
+                            <input type="tel" name="telefone" id="numeroTelefone"><br>
+                        </div>
+                        <div class="input-box">
+                            <label for="adress">Endereço:</label>
+                            <input type="text" name="endereço" id="adress" required><br>
+                        </div>
+                        <div class="input-box">
+                            <label for="CEP">CEP:</label>
+                            <input type="number" name="cep" id="CEP" required><br>
+                        </div>
+                        <div class="input-box">
+                            <label for="time">Time que torce (Opcional):</label>
+                            <select name="times" id="time">
+                                <option value="Nenhum">Nenhum</option>
+                                <option value="Sport">SPORT CLUB DO RECIFE</option>
+                                <option value="Santa">Santa cruz</option>
+                                <option value="Nautico">Náutico</option>
+                                <option value="Fortaleza">Fortaleza</option>
+                                <option value="Ceará">Ceará</option>
+                                <option value="Remo">Remo</option>
+                                <option value="paysandu">Paysandu</option>
+                                <option value="vitoria">Vitória</option>
+                            </select><br>
+                        </div>
+                        <div class="input-box">
+                            <label for="senha">Senha:</label>
+                            <input type="password" name="senha" id="senha" required><br>
+                        </div>
+                        <div class="input-box">
+                            <label for="confirmarSenha">Confirme sua senha:</label>
+                            <input type="password" name="senha" id="confirmarSenha" required>
+                        </div>
 
+                        <input type="submit" value="Criar Conta" class="button">
 
-                    </fieldset>
+                    
                 </form>
             </div>
         </div>
